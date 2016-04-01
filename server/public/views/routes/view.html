@@ -1,0 +1,9 @@
+<h2>Heroes Listed</h2>
+<div ng-repeat="hero in heroArray.response">
+    <h3>{{hero.alias}}</h3>
+    <h6>{{hero.first_name}} {{hero.last_name}}</h6>
+    <h4>{{hero.city}}</h4>
+    <h5>{{hero.power_name}}</h5>
+
+    <button ng-click="deleteHero(hero._id)">Delete</button>
+</div>
